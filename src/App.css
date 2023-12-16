@@ -1,12 +1,32 @@
 :root {
-	--light: #fdf8e5;
+  --light: #fdf8e5;
+  --dark: #413507;
 }
 
 body {
-	background-color: var(--light);
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.5;
-	display: flex;
-	justify-content: center;
-	margin: 0;
+  background-color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.form__text {
+  color: var(--dark);
+  font-family: "Cattino";
+  font-size: 1.7rem;
+  margin: 0.2em;
+}
+
+.form__label {
+  min-width: 40%;
+}
+
+.form__input {
+  min-width: 40%;
+}
+.form__field {
+  display: block;
+  min-width: 90%;
 }
