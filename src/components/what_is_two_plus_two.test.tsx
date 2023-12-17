@@ -9,6 +9,7 @@ describe("Species Name component", () => {
     const sampleSpeciesNameProps: WhatIsTwoPlusTwoProps = {
       whatIsTwoPlusTwo: "",
       onChangeWhatIsTwoPlusTwo: () => {},
+      validate: (value: string) => [],
     };
     //Act
     render(<WhatIsTwoPlusTwo {...sampleSpeciesNameProps} />);
@@ -20,6 +21,7 @@ describe("Species Name component", () => {
     const sampleSpeciesNameProps: WhatIsTwoPlusTwoProps = {
       whatIsTwoPlusTwo: "4",
       onChangeWhatIsTwoPlusTwo: () => {},
+      validate: (value: string) => [],
     };
     //Act
     render(<WhatIsTwoPlusTwo {...sampleSpeciesNameProps} />);
