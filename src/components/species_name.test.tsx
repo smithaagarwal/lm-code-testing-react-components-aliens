@@ -7,6 +7,7 @@ describe("Species Name component", () => {
     const sampleSpeciesNameProps: SpeciesNameProps = {
       speciesName: "",
       onChangeSpeciesName: () => {},
+      validate: (value: string) => [],
     };
     //Act
     render(<SpeciesName {...sampleSpeciesNameProps} />);
@@ -18,6 +19,7 @@ describe("Species Name component", () => {
     const sampleSpeciesNameProps: SpeciesNameProps = {
       speciesName: "human",
       onChangeSpeciesName: () => {},
+      validate: (value: string) => ["human"],
     };
     //Act
     render(<SpeciesName {...sampleSpeciesNameProps} />);

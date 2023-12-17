@@ -7,6 +7,7 @@ describe("Planet Name component", () => {
     const samplePlanetNameProps: PlanetNameProps = {
       planetName: "",
       onChangePlanetName: () => {},
+      validate: (value: string) => [],
     };
     //Act
     render(<PlanetName {...samplePlanetNameProps} />);
@@ -18,6 +19,7 @@ describe("Planet Name component", () => {
     const samplePlanetNameProps: PlanetNameProps = {
       planetName: "earth",
       onChangePlanetName: () => {},
+      validate: (value: string) => ["human"],
     };
     //Act
     render(<PlanetName {...samplePlanetNameProps} />);
