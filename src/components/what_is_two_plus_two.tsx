@@ -1,4 +1,4 @@
-interface WhatIsTwoPlusTwoProps {
+export interface WhatIsTwoPlusTwoProps {
   whatIsTwoPlusTwo: string;
   onChangeWhatIsTwoPlusTwo: (e: string) => void;
 }

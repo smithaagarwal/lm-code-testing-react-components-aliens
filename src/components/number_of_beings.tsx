@@ -1,4 +1,4 @@
-interface NumberOfBeingsProps {
+export interface NumberOfBeingsProps {
   numberOfBeings: number | undefined;
   onChangeNumberOfBeings: (e: number | undefined) => void;
 }
