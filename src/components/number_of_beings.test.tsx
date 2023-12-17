@@ -7,6 +7,7 @@ describe("Number Of Beings component", () => {
     const sampleNumberOfBeingsProps: NumberOfBeingsProps = {
       numberOfBeings: 7,
       onChangeNumberOfBeings: () => {},
+      validate: (value: number | undefined) => [],
     };
     //Act
     render(<NumberOfBeings {...sampleNumberOfBeingsProps} />);
@@ -18,6 +19,7 @@ describe("Number Of Beings component", () => {
     const sampleNumberOfBeingsProps: NumberOfBeingsProps = {
       numberOfBeings: 7,
       onChangeNumberOfBeings: () => {},
+      validate: (value: number | undefined) => [],
     };
     //Act
     render(<NumberOfBeings {...sampleNumberOfBeingsProps} />);

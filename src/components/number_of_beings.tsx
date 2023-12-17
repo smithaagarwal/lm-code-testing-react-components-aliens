@@ -1,10 +1,13 @@
+import ErrorMessage from "./error_message";
 export interface NumberOfBeingsProps {
   numberOfBeings: number | undefined;
   onChangeNumberOfBeings: (e: number | undefined) => void;
+  validate: (name: number | undefined) => string[];
 }
 const NumberOfBeings: React.FC<NumberOfBeingsProps> = ({
   numberOfBeings,
   onChangeNumberOfBeings,
+  validate,
 }) => (
   <>
     <div className="form__field">
@@ -18,6 +21,7 @@ const NumberOfBeings: React.FC<NumberOfBeingsProps> = ({
         value={numberOfBeings || ""}
         onChange={(e) => onChangeNumberOfBeings(parseInt(e.target.value, 10))}
       />
+      <ErrorMessage messages={validate(numberOfBeings)} />
     </div>
   </>
 );
