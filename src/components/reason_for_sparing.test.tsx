@@ -7,6 +7,7 @@ describe("Reason for sparing component", () => {
     const sampleReasonForSparingProps: ReasonForSparingProps = {
       reasonForSparing: "",
       onChangeReasonForSparing: () => {},
+      validate: (value: string) => [],
     };
     //Act
     render(<ReasonForSparing {...sampleReasonForSparingProps} />);
@@ -18,6 +19,7 @@ describe("Reason for sparing component", () => {
     const sampleReasonForSparingProps: ReasonForSparingProps = {
       reasonForSparing: "xyz",
       onChangeReasonForSparing: () => {},
+      validate: (value: string) => [],
     };
     //Act
     render(<ReasonForSparing {...sampleReasonForSparingProps} />);

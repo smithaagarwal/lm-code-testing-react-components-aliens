@@ -9,6 +9,7 @@ import validateSpeciesName from "./validate/validate_species_name";
 import validatePlanetName from "./validate/validate_planet_name";
 import validateNumberOfBeings from "./validate/validate_number_of_beings";
 import validateMathsQuestion from "./validate/validate_maths_question";
+import validateReasonForSparing from "./validate/validateReasonForSparing";
 
 const W12MForm = () => {
   const [speciesName, setSpeciesName] = useState("");
@@ -55,6 +56,7 @@ const W12MForm = () => {
         <ReasonForSparing
           reasonForSparing={reasonForSparing}
           onChangeReasonForSparing={(value) => setReasonForSparing(value)}
+          validate={validateReasonForSparing}
         />
         <button className="form__button" type="submit">
           Submit
